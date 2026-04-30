@@ -8,4 +8,11 @@ const nextConfig = {
   },
 }
 
+fetch('/path', {
+  headers: {
+    'x-deployment-id': process.env.NEXT_DEPLOYMENT_ID
+  },
+});
+
+
 export default nextConfig
